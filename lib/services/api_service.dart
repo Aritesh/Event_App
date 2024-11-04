@@ -17,9 +17,7 @@ class ApiService {
           'email': email,
         }),
       );
-      print(response.statusCode);
       if (response.statusCode == 201) {
-        print('RSVP submitted successfully!');
       } else {
         throw Exception('Failed to submit RSVP: ${response.reasonPhrase}');
       }
